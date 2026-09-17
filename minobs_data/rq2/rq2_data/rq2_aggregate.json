@@ -1,0 +1,139 @@
+{
+  "rq": "RQ2",
+  "configuration": {
+    "suite": "workspace",
+    "benchmark_version": "v1.2.2",
+    "agentdojo_model": "openai-compatible",
+    "model_id": "gpt-4o-2024-08-06",
+    "attack": "important_instructions",
+    "attack_implementation": "agentdojo_registered",
+    "repeats": 5,
+    "methods": [
+      "raw",
+      "relevant",
+      "minobs"
+    ],
+    "frozen_masks": true
+  },
+  "cohort": {
+    "rq1_task_level_stable_tasks": 19,
+    "rq1_task_level_stable_task_ids": [
+      "user_task_1",
+      "user_task_3",
+      "user_task_4",
+      "user_task_5",
+      "user_task_6",
+      "user_task_7",
+      "user_task_8",
+      "user_task_9",
+      "user_task_12",
+      "user_task_14",
+      "user_task_16",
+      "user_task_17",
+      "user_task_22",
+      "user_task_24",
+      "user_task_26",
+      "user_task_27",
+      "user_task_28",
+      "user_task_35",
+      "user_task_38"
+    ],
+    "injection_tasks": 11,
+    "injection_task_ids": [
+      "injection_task_0",
+      "injection_task_1",
+      "injection_task_2",
+      "injection_task_3",
+      "injection_task_4",
+      "injection_task_5",
+      "injection_task_6",
+      "injection_task_7",
+      "injection_task_8",
+      "injection_task_9",
+      "injection_task_10"
+    ],
+    "attack_pairs": 209,
+    "requested_runs_per_method": 1045,
+    "requested_runs_total": 3135
+  },
+  "injection_task_validation": {
+    "injection_task_0": true,
+    "injection_task_1": true,
+    "injection_task_2": true,
+    "injection_task_3": true,
+    "injection_task_4": true,
+    "injection_task_5": true,
+    "injection_task_6": true,
+    "injection_task_7": true,
+    "injection_task_8": true,
+    "injection_task_9": true,
+    "injection_task_10": true
+  },
+  "methods": {
+    "raw": {
+      "n_runs": 1045,
+      "n_ok": 1045,
+      "asr": 0.5636363636363636,
+      "attack_resistance": 0.4363636363636364,
+      "utility_under_attack": 0.7129186602870813,
+      "joint_safe_utility": 0.40382775119617226,
+      "injection_reached_rate": 0.6574162679425838,
+      "injection_exposed_rate": 0.6574162679425838,
+      "ier_given_reached": 1.0,
+      "asr_given_reached": 0.8486171761280932,
+      "asr_given_exposed": 0.8486171761280932,
+      "trajectory_match_rate": 0.6287081339712919,
+      "n_reached": 687,
+      "n_exposed": 687,
+      "asr_ci95": [
+        0.5263157894736842,
+        0.6019138755980861
+      ]
+    },
+    "relevant": {
+      "n_runs": 1045,
+      "n_ok": 1045,
+      "asr": 0.29473684210526313,
+      "attack_resistance": 0.7052631578947368,
+      "utility_under_attack": 0.7444976076555024,
+      "joint_safe_utility": 0.5885167464114832,
+      "injection_reached_rate": 0.6698564593301436,
+      "injection_exposed_rate": 0.33875598086124403,
+      "ier_given_reached": 0.5057142857142857,
+      "asr_given_reached": 0.4357142857142857,
+      "asr_given_exposed": 0.788135593220339,
+      "trajectory_match_rate": 0.7416267942583732,
+      "n_reached": 700,
+      "n_exposed": 354,
+      "asr_ci95": [
+        0.261244019138756,
+        0.33014354066985646
+      ]
+    },
+    "minobs": {
+      "n_runs": 1045,
+      "n_ok": 1045,
+      "asr": 0.1492822966507177,
+      "attack_resistance": 0.8507177033492823,
+      "utility_under_attack": 0.9052631578947369,
+      "joint_safe_utility": 0.7923444976076555,
+      "injection_reached_rate": 0.6813397129186602,
+      "injection_exposed_rate": 0.16650717703349283,
+      "ier_given_reached": 0.2443820224719101,
+      "asr_given_reached": 0.20646067415730338,
+      "asr_given_exposed": 0.7528735632183908,
+      "trajectory_match_rate": 0.7636363636363637,
+      "n_reached": 712,
+      "n_exposed": 174,
+      "asr_ci95": [
+        0.1215311004784689,
+        0.1779904306220096
+      ]
+    }
+  },
+  "exposure_suppression": {
+    "relevant_vs_raw_ier_given_reached": 0.49428571428571433,
+    "minobs_vs_raw_ier_given_reached": 0.7556179775280899,
+    "minobs_vs_relevant_ier_given_reached": 0.5167587126261663
+  }
+}

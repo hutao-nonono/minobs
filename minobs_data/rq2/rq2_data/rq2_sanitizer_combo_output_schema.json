@@ -1,0 +1,40 @@
+{
+  "expected_runs": 2090,
+  "methods": ["sanitizer", "combo"],
+  "runs_per_method": 1045,
+  "required_result_fields": [
+    "user_task_id",
+    "injection_task_id",
+    "method",
+    "repeat",
+    "attack",
+    "status",
+    "utility",
+    "attack_success",
+    "joint_safe_utility",
+    "injection_reached",
+    "injection_exposed",
+    "trajectory_match",
+    "plan_hits",
+    "plan_misses",
+    "tool_name_mismatches",
+    "argument_mismatches",
+    "parse_failures",
+    "first_reached_step",
+    "first_exposed_step",
+    "duration_seconds",
+    "model_id",
+    "sanitizer_model"
+  ],
+  "primary_metrics": [
+    "ASR",
+    "Utility under Attack",
+    "Joint Safe Utility",
+    "Reached",
+    "Exposed",
+    "IER given Reached",
+    "ASR given Reached",
+    "ASR given Exposed",
+    "Trajectory Match"
+  ]
+}

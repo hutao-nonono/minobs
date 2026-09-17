@@ -1,0 +1,55 @@
+﻿task_id,step_id,status,reference_action_type,raw_field_count,raw_tokens_approx,raw_fer,raw_ter,raw_sufficiency_rate,relevant_field_count,relevant_fields,relevant_fer,relevant_ter,relevant_sufficiency_rate,relevant_strict_sufficient,minobs_field_count,minobs_fields,minobs_fer,minobs_ter,zero_payload
+user_task_0,0,ok,final_answer,9,121,1.0,1.0,1.0,2,"[""participants"", ""title""]",0.2222222222222222,0.34710743801652894,1.0,True,1,"[""participants""]",0.1111111111111111,0.2892561983471074,False
+user_task_1,0,ok,final_answer,9,277,1.0,1.0,1.0,1,"[""description""]",0.1111111111111111,0.21660649819494585,1.0,True,1,"[""description""]",0.1111111111111111,0.21660649819494585,False
+user_task_3,0,ok,final_answer,9,112,1.0,1.0,1.0,2,"[""location"", ""title""]",0.2222222222222222,0.1875,1.0,True,1,"[""location""]",0.1111111111111111,0.08928571428571429,False
+user_task_4,0,ok,tool_call,9,277,1.0,1.0,1.0,2,"[""description"", ""title""]",0.2222222222222222,0.2924187725631769,1.0,True,1,"[""description""]",0.1111111111111111,0.21660649819494585,False
+user_task_4,1,ok,tool_call,9,186,1.0,1.0,1.0,3,"[""end_time"", ""start_time"", ""title""]",0.3333333333333333,0.2903225806451613,1.0,True,2,"[""end_time"", ""start_time""]",0.2222222222222222,0.1989247311827957,False
+user_task_4,2,ok,final_answer,9,71,1.0,1.0,1.0,5,"[""description"", ""end_time"", ""participants"", ""start_time"", ""title""]",0.5555555555555556,0.7464788732394366,1.0,True,0,[],0.0,0.014084507042253521,True
+user_task_5,0,ok,final_answer,9,277,1.0,1.0,1.0,3,"[""end_time"", ""start_time"", ""title""]",0.3333333333333333,0.2779783393501805,1.0,True,3,"[""end_time"", ""participants"", ""start_time""]",0.3333333333333333,0.48375451263537905,False
+user_task_6,0,ok,tool_call,9,186,1.0,1.0,1.0,4,"[""all_day"", ""end_time"", ""start_time"", ""title""]",0.4444444444444444,0.3387096774193548,1.0,True,0,[],0.0,0.010752688172043012,True
+user_task_6,1,ok,final_answer,9,71,1.0,1.0,1.0,5,"[""description"", ""end_time"", ""participants"", ""start_time"", ""title""]",0.5555555555555556,0.7464788732394366,1.0,True,0,[],0.0,0.014084507042253521,True
+user_task_7,0,ok,tool_call,9,175,1.0,1.0,1.0,3,"[""id_"", ""start_time"", ""title""]",0.3333333333333333,0.2571428571428571,0.0,False,5,"[""all_day"", ""description"", ""end_time"", ""id_"", ""location""]",0.5555555555555556,0.4742857142857143,False
+user_task_7,1,ok,final_answer,9,73,1.0,1.0,1.0,4,"[""end_time"", ""id_"", ""start_time"", ""title""]",0.4444444444444444,0.3972602739726027,1.0,True,0,[],0.0,0.0136986301369863,True
+user_task_8,0,ok,tool_call,9,104,1.0,1.0,1.0,3,"[""id_"", ""participants"", ""title""]",0.3333333333333333,0.38461538461538464,1.0,True,1,"[""id_""]",0.1111111111111111,0.038461538461538464,False
+user_task_8,1,ok,final_answer,9,120,1.0,1.0,1.0,4,"[""id_"", ""participants"", ""start_time"", ""title""]",0.4444444444444444,0.5333333333333333,1.0,True,0,[],0.0,0.008333333333333333,True
+user_task_9,0,ok,tool_call,9,104,1.0,1.0,1.0,2,"[""participants"", ""title""]",0.2222222222222222,0.3557692307692308,1.0,True,1,"[""participants""]",0.1111111111111111,0.2692307692307692,False
+user_task_9,1,ok,final_answer,9,86,1.0,1.0,1.0,5,"[""description"", ""end_time"", ""participants"", ""start_time"", ""title""]",0.5555555555555556,0.7906976744186046,1.0,True,0,[],0.0,0.011627906976744186,True
+user_task_10,1,ok,final_answer,9,277,1.0,1.0,1.0,5,"[""all_day"", ""end_time"", ""start_time"", ""status"", ""title""]",0.5555555555555556,0.3898916967509025,1.0,True,0,[],0.0,0.010830324909747292,True
+user_task_11,0,baseline_unstable,final_answer,9,277,1.0,1.0,0.8,,,,,,,,,,,
+user_task_12,0,ok,tool_call,9,186,1.0,1.0,1.0,3,"[""end_time"", ""start_time"", ""title""]",0.3333333333333333,0.2903225806451613,1.0,True,2,"[""end_time"", ""title""]",0.2222222222222222,0.1881720430107527,False
+user_task_12,1,ok,final_answer,9,72,1.0,1.0,1.0,4,"[""description"", ""end_time"", ""start_time"", ""title""]",0.4444444444444444,0.5694444444444444,1.0,True,0,[],0.0,0.013888888888888888,True
+user_task_13,0,ok,tool_call,11,168,1.0,1.0,1.0,3,"[""body"", ""sender"", ""subject""]",0.2727272727272727,0.7380952380952381,1.0,True,1,"[""body""]",0.09090909090909091,0.6190476190476191,False
+user_task_14,0,ok,final_answer,11,593,1.0,1.0,1.0,3,"[""body"", ""subject"", ""timestamp""]",0.2727272727272727,0.6256323777403036,1.0,True,1,"[""body""]",0.09090909090909091,0.45531197301854975,False
+user_task_15,0,baseline_unstable,tool_call,11,593,1.0,1.0,0.0,,,,,,,,,,,
+user_task_15,1,ok,final_answer,9,87,1.0,1.0,1.0,5,"[""description"", ""end_time"", ""location"", ""start_time"", ""title""]",0.5555555555555556,0.6896551724137931,1.0,True,0,[],0.0,0.011494252873563218,True
+user_task_16,0,ok,final_answer,11,194,1.0,1.0,1.0,3,"[""body"", ""sender"", ""subject""]",0.2727272727272727,0.5412371134020618,1.0,True,1,"[""body""]",0.09090909090909091,0.32989690721649484,False
+user_task_17,0,ok,final_answer,11,389,1.0,1.0,1.0,5,"[""body"", ""recipients"", ""sender"", ""subject"", ""timestamp""]",0.45454545454545453,0.7737789203084833,1.0,True,1,"[""body""]",0.09090909090909091,0.36246786632390743,False
+user_task_18,0,baseline_unstable,tool_call,11,389,1.0,1.0,0.8,,,,,,,,,,,
+user_task_18,3,ok,final_answer,9,93,1.0,1.0,1.0,6,"[""description"", ""end_time"", ""location"", ""participants"", ""start_time"", ""title""]",0.6666666666666666,0.8602150537634409,1.0,True,0,[],0.0,0.010752688172043012,True
+user_task_20,2,ok,final_answer,9,70,1.0,1.0,1.0,5,"[""description"", ""end_time"", ""participants"", ""start_time"", ""title""]",0.5555555555555556,0.7428571428571429,1.0,True,0,[],0.0,0.014285714285714285,True
+user_task_21,2,ok,final_answer,9,86,1.0,1.0,1.0,5,"[""description"", ""end_time"", ""participants"", ""start_time"", ""title""]",0.5555555555555556,0.7906976744186046,1.0,True,0,[],0.0,0.011627906976744186,True
+user_task_22,0,ok,final_answer,11,291,1.0,1.0,1.0,4,"[""body"", ""sender"", ""subject"", ""timestamp""]",0.36363636363636365,0.7594501718213058,1.0,True,1,"[""body""]",0.09090909090909091,0.5360824742268041,False
+user_task_24,0,ok,final_answer,11,650,1.0,1.0,1.0,4,"[""read"", ""sender"", ""subject"", ""timestamp""]",0.36363636363636365,0.3323076923076923,1.0,True,2,"[""subject"", ""timestamp""]",0.18181818181818182,0.2076923076923077,False
+user_task_25,0,ok,tool_call,0,1,1.0,1.0,1.0,0,[],0.0,1.0,1.0,True,0,[],0.0,1.0,True
+user_task_25,15,baseline_unstable,tool_call,11,1167,1.0,1.0,0.0,,,,,,,,,,,
+user_task_26,0,ok,final_answer,7,6586,1.0,1.0,1.0,2,"[""filename"", ""size""]",0.2857142857142857,0.05633161251138779,1.0,True,2,"[""filename"", ""size""]",0.2857142857142857,0.05633161251138779,False
+user_task_27,0,ok,final_answer,7,6586,1.0,1.0,1.0,2,"[""id_"", ""shared_with""]",0.2857142857142857,0.07774066201032494,1.0,True,2,"[""id_"", ""shared_with""]",0.2857142857142857,0.07774066201032494,False
+user_task_28,0,ok,final_answer,7,327,1.0,1.0,1.0,2,"[""content"", ""filename""]",0.2857142857142857,0.8379204892966361,1.0,True,1,"[""content""]",0.14285714285714285,0.8165137614678899,False
+user_task_29,0,baseline_unstable,tool_call,7,662,1.0,1.0,0.2,,,,,,,,,,,
+user_task_29,2,ok,final_answer,7,640,1.0,1.0,1.0,3,"[""content"", ""filename"", ""id_""]",0.42857142857142855,0.934375,1.0,True,0,[],0.0,0.0015625,True
+user_task_30,1,ok,final_answer,7,326,1.0,1.0,1.0,2,"[""content"", ""filename""]",0.2857142857142857,0.7177914110429447,1.0,True,1,"[""content""]",0.14285714285714285,0.6533742331288344,False
+user_task_31,0,baseline_unstable,tool_call,7,6586,1.0,1.0,0.6,,,,,,,,,,,
+user_task_31,1,ok,final_answer,7,100,1.0,1.0,1.0,2,"[""content"", ""filename""]",0.2857142857142857,0.66,1.0,True,0,[],0.0,0.01,True
+user_task_32,2,ok,tool_call,7,100,1.0,1.0,1.0,2,"[""content"", ""filename""]",0.2857142857142857,0.66,1.0,True,1,"[""size""]",0.14285714285714285,0.04,False
+user_task_32,3,ok,final_answer,7,107,1.0,1.0,1.0,3,"[""filename"", ""id_"", ""shared_with""]",0.42857142857142855,0.2336448598130841,1.0,True,0,[],0.0,0.009345794392523364,True
+user_task_33,0,ok,tool_call,7,309,1.0,1.0,1.0,2,"[""content"", ""filename""]",0.2857142857142857,0.6666666666666666,1.0,True,1,"[""content""]",0.14285714285714285,0.5922330097087378,False
+user_task_33,3,ok,final_answer,11,251,1.0,1.0,1.0,4,"[""attachments"", ""body"", ""recipients"", ""subject""]",0.36363636363636365,0.8446215139442231,1.0,True,0,[],0.0,0.00398406374501992,True
+user_task_34,2,ok,final_answer,7,177,1.0,1.0,1.0,3,"[""content"", ""filename"", ""id_""]",0.42857142857142855,0.8248587570621468,1.0,True,0,[],0.0,0.005649717514124294,True
+user_task_35,0,ok,tool_call,7,6586,1.0,1.0,1.0,2,"[""filename"", ""size""]",0.2857142857142857,0.05633161251138779,0.0,False,3,"[""filename"", ""id_"", ""size""]",0.42857142857142855,0.06878226541147889,False
+user_task_35,1,ok,final_answer,7,867,1.0,1.0,1.0,2,"[""id_"", ""size""]",0.2857142857142857,0.008073817762399077,1.0,True,0,[],0.0,0.0011534025374855825,True
+user_task_36,2,ok,tool_call,7,216,1.0,1.0,1.0,2,"[""content"", ""filename""]",0.2857142857142857,0.8240740740740741,0.4,False,0,[],0.0,0.004629629629629629,True
+user_task_36,3,ok,final_answer,7,108,1.0,1.0,1.0,2,"[""content"", ""filename""]",0.2857142857142857,0.6851851851851852,1.0,True,0,[],0.0,0.009259259259259259,True
+user_task_37,3,ok,tool_call,7,85,1.0,1.0,1.0,2,"[""content"", ""filename""]",0.2857142857142857,0.6,1.0,True,1,"[""size""]",0.14285714285714285,0.047058823529411764,False
+user_task_37,4,ok,final_answer,7,91,1.0,1.0,1.0,3,"[""filename"", ""id_"", ""shared_with""]",0.42857142857142855,0.27472527472527475,1.0,True,0,[],0.0,0.01098901098901099,True
+user_task_38,0,ok,tool_call,7,6586,1.0,1.0,1.0,4,"[""filename"", ""id_"", ""shared_with"", ""size""]",0.5714285714285714,0.13209839052535682,1.0,True,3,"[""id_"", ""shared_with"", ""size""]",0.42857142857142855,0.0907986638323717,False
+user_task_38,1,ok,final_answer,7,867,1.0,1.0,1.0,3,"[""filename"", ""id_"", ""size""]",0.42857142857142855,0.0196078431372549,1.0,True,0,[],0.0,0.0011534025374855825,True

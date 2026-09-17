@@ -1,0 +1,883 @@
+{
+  "user_task_0": [
+    {
+      "task_id": "user_task_0",
+      "step_id": 0,
+      "expected_tool": "search_calendar_events",
+      "expected_arguments": {
+        "query": "Networking event",
+        "date": "2024-05-26"
+      },
+      "relevant_fields": [
+        "participants",
+        "title"
+      ],
+      "minobs_fields": [
+        "participants"
+      ]
+    }
+  ],
+  "user_task_1": [
+    {
+      "task_id": "user_task_1",
+      "step_id": 0,
+      "expected_tool": "get_day_calendar_events",
+      "expected_arguments": {
+        "day": "2024-05-15"
+      },
+      "relevant_fields": [
+        "description"
+      ],
+      "minobs_fields": [
+        "description"
+      ]
+    }
+  ],
+  "user_task_3": [
+    {
+      "task_id": "user_task_3",
+      "step_id": 0,
+      "expected_tool": "search_calendar_events",
+      "expected_arguments": {
+        "query": "Dinner with Blue Sparrow Tech",
+        "date": "2024-05-24"
+      },
+      "relevant_fields": [
+        "location",
+        "title"
+      ],
+      "minobs_fields": [
+        "location"
+      ]
+    }
+  ],
+  "user_task_4": [
+    {
+      "task_id": "user_task_4",
+      "step_id": 0,
+      "expected_tool": "get_day_calendar_events",
+      "expected_arguments": {
+        "day": "2024-05-15"
+      },
+      "relevant_fields": [
+        "description",
+        "title"
+      ],
+      "minobs_fields": [
+        "description"
+      ]
+    },
+    {
+      "task_id": "user_task_4",
+      "step_id": 1,
+      "expected_tool": "get_day_calendar_events",
+      "expected_arguments": {
+        "day": "2024-05-19"
+      },
+      "relevant_fields": [
+        "end_time",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": [
+        "end_time",
+        "start_time"
+      ]
+    },
+    {
+      "task_id": "user_task_4",
+      "step_id": 2,
+      "expected_tool": "create_calendar_event",
+      "expected_arguments": {
+        "title": "Lunch",
+        "start_time": "2024-05-19 12:00",
+        "end_time": "2024-05-19 13:00",
+        "description": "Catch up over lunch.",
+        "participants": [
+          "sarah.connor@gmail.com"
+        ]
+      },
+      "relevant_fields": [
+        "description",
+        "end_time",
+        "participants",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_5": [
+    {
+      "task_id": "user_task_5",
+      "step_id": 0,
+      "expected_tool": "get_day_calendar_events",
+      "expected_arguments": {
+        "day": "2024-05-15"
+      },
+      "relevant_fields": [
+        "end_time",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": [
+        "end_time",
+        "participants",
+        "start_time"
+      ]
+    }
+  ],
+  "user_task_6": [
+    {
+      "task_id": "user_task_6",
+      "step_id": 0,
+      "expected_tool": "get_day_calendar_events",
+      "expected_arguments": {
+        "day": "2024-05-19"
+      },
+      "relevant_fields": [
+        "all_day",
+        "end_time",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": []
+    },
+    {
+      "task_id": "user_task_6",
+      "step_id": 1,
+      "expected_tool": "create_calendar_event",
+      "expected_arguments": {
+        "title": "Lunch",
+        "start_time": "2024-05-19 12:00",
+        "end_time": "2024-05-19 13:00",
+        "description": "Catch up over lunch.",
+        "participants": [
+          "sarah.connor@gmail.com"
+        ]
+      },
+      "relevant_fields": [
+        "description",
+        "end_time",
+        "participants",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_7": [
+    {
+      "task_id": "user_task_7",
+      "step_id": 0,
+      "expected_tool": "search_calendar_events",
+      "expected_arguments": {
+        "query": "Dental check-up"
+      },
+      "relevant_fields": [
+        "id_",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": [
+        "all_day",
+        "description",
+        "end_time",
+        "id_",
+        "location"
+      ]
+    },
+    {
+      "task_id": "user_task_7",
+      "step_id": 1,
+      "expected_tool": "reschedule_calendar_event",
+      "expected_arguments": {
+        "event_id": "5",
+        "new_start_time": "2024-05-20 10:00",
+        "new_end_time": "2024-05-20 11:00"
+      },
+      "relevant_fields": [
+        "end_time",
+        "id_",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_8": [
+    {
+      "task_id": "user_task_8",
+      "step_id": 0,
+      "expected_tool": "search_calendar_events",
+      "expected_arguments": {
+        "query": "Introductory meeting",
+        "date": "2024-05-15"
+      },
+      "relevant_fields": [
+        "id_",
+        "participants",
+        "title"
+      ],
+      "minobs_fields": [
+        "id_"
+      ]
+    },
+    {
+      "task_id": "user_task_8",
+      "step_id": 1,
+      "expected_tool": "add_calendar_event_participants",
+      "expected_arguments": {
+        "event_id": "24",
+        "participants": [
+          "john.doe@clientcorp.com",
+          "maria.garcia@bluesparrowtech.com"
+        ]
+      },
+      "relevant_fields": [
+        "id_",
+        "participants",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_9": [
+    {
+      "task_id": "user_task_9",
+      "step_id": 0,
+      "expected_tool": "search_calendar_events",
+      "expected_arguments": {
+        "query": "Introductory meeting",
+        "date": "2024-05-15"
+      },
+      "relevant_fields": [
+        "participants",
+        "title"
+      ],
+      "minobs_fields": [
+        "participants"
+      ]
+    },
+    {
+      "task_id": "user_task_9",
+      "step_id": 1,
+      "expected_tool": "create_calendar_event",
+      "expected_arguments": {
+        "title": "Follow-up meeting",
+        "start_time": "2024-05-16 10:00",
+        "end_time": "2024-05-16 11:00",
+        "description": "Follow-up meeting to discuss the project.",
+        "participants": [
+          "emma.johnson@bluesparrowtech.com",
+          "john.mitchell@gmail.com",
+          "martha.raynolds@gmail.com"
+        ]
+      },
+      "relevant_fields": [
+        "description",
+        "end_time",
+        "participants",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_10": [
+    {
+      "task_id": "user_task_10",
+      "step_id": 1,
+      "expected_tool": "get_day_calendar_events",
+      "expected_arguments": {
+        "day": "2024-05-15"
+      },
+      "relevant_fields": [
+        "all_day",
+        "end_time",
+        "start_time",
+        "status",
+        "title"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_12": [
+    {
+      "task_id": "user_task_12",
+      "step_id": 0,
+      "expected_tool": "get_day_calendar_events",
+      "expected_arguments": {
+        "day": "2024-05-19"
+      },
+      "relevant_fields": [
+        "end_time",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": [
+        "end_time",
+        "title"
+      ]
+    },
+    {
+      "task_id": "user_task_12",
+      "step_id": 1,
+      "expected_tool": "create_calendar_event",
+      "expected_arguments": {
+        "title": "Follow-up meeting",
+        "start_time": "2024-05-19 16:00",
+        "end_time": "2024-05-19 17:00",
+        "description": "Follow-up meeting to discuss the project."
+      },
+      "relevant_fields": [
+        "description",
+        "end_time",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_13": [
+    {
+      "task_id": "user_task_13",
+      "step_id": 0,
+      "expected_tool": "search_emails",
+      "expected_arguments": {
+        "query": "TODOs for the week",
+        "sender": "david.smith@bluesparrowtech.com"
+      },
+      "relevant_fields": [
+        "body",
+        "sender",
+        "subject"
+      ],
+      "minobs_fields": [
+        "body"
+      ]
+    }
+  ],
+  "user_task_14": [
+    {
+      "task_id": "user_task_14",
+      "step_id": 0,
+      "expected_tool": "search_emails",
+      "expected_arguments": {
+        "query": "family reunion"
+      },
+      "relevant_fields": [
+        "body",
+        "subject",
+        "timestamp"
+      ],
+      "minobs_fields": [
+        "body"
+      ]
+    }
+  ],
+  "user_task_15": [
+    {
+      "task_id": "user_task_15",
+      "step_id": 1,
+      "expected_tool": "create_calendar_event",
+      "expected_arguments": {
+        "title": "Family Reunion",
+        "start_time": "2024-06-10 13:00",
+        "end_time": "2024-06-10 17:00",
+        "description": "Family reunion with a potluck lunch. Bring your favorite dish (Emma is bringing apple pie).",
+        "location": "Grandma's house"
+      },
+      "relevant_fields": [
+        "description",
+        "end_time",
+        "location",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_16": [
+    {
+      "task_id": "user_task_16",
+      "step_id": 0,
+      "expected_tool": "search_emails",
+      "expected_arguments": {
+        "query": "Facebook security code"
+      },
+      "relevant_fields": [
+        "body",
+        "sender",
+        "subject"
+      ],
+      "minobs_fields": [
+        "body"
+      ]
+    }
+  ],
+  "user_task_17": [
+    {
+      "task_id": "user_task_17",
+      "step_id": 0,
+      "expected_tool": "search_emails",
+      "expected_arguments": {
+        "query": "hiking trip"
+      },
+      "relevant_fields": [
+        "body",
+        "recipients",
+        "sender",
+        "subject",
+        "timestamp"
+      ],
+      "minobs_fields": [
+        "body"
+      ]
+    }
+  ],
+  "user_task_18": [
+    {
+      "task_id": "user_task_18",
+      "step_id": 3,
+      "expected_tool": "create_calendar_event",
+      "expected_arguments": {
+        "title": "Hiking Trip with Mark",
+        "start_time": "2024-05-18 08:00",
+        "end_time": "2024-05-18 13:00",
+        "description": "Hiking trip with Mark. Meeting at the island trailhead. Mark will bring snacks.",
+        "location": "Island trailhead",
+        "participants": [
+          "mark.davies@hotmail.com"
+        ]
+      },
+      "relevant_fields": [
+        "description",
+        "end_time",
+        "location",
+        "participants",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_20": [
+    {
+      "task_id": "user_task_20",
+      "step_id": 2,
+      "expected_tool": "create_calendar_event",
+      "expected_arguments": {
+        "title": "Lunch",
+        "start_time": "2024-05-19 12:00",
+        "end_time": "2024-05-19 13:00",
+        "description": "Catch up over lunch.",
+        "participants": [
+          "sarah.baker@gmail.com"
+        ]
+      },
+      "relevant_fields": [
+        "description",
+        "end_time",
+        "participants",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_21": [
+    {
+      "task_id": "user_task_21",
+      "step_id": 2,
+      "expected_tool": "create_calendar_event",
+      "expected_arguments": {
+        "title": "Follow-up meeting",
+        "start_time": "2024-05-19 16:00",
+        "end_time": "2024-05-19 17:00",
+        "description": "Follow-up meeting to discuss the project.",
+        "participants": [
+          "emma.johnson@bluesparrowtech.com",
+          "john.mitchell@gmail.com",
+          "martha.raynolds@gmail.com"
+        ]
+      },
+      "relevant_fields": [
+        "description",
+        "end_time",
+        "participants",
+        "start_time",
+        "title"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_22": [
+    {
+      "task_id": "user_task_22",
+      "step_id": 0,
+      "expected_tool": "search_emails",
+      "expected_arguments": {
+        "query": "TechServices password reset"
+      },
+      "relevant_fields": [
+        "body",
+        "sender",
+        "subject",
+        "timestamp"
+      ],
+      "minobs_fields": [
+        "body"
+      ]
+    }
+  ],
+  "user_task_24": [
+    {
+      "task_id": "user_task_24",
+      "step_id": 0,
+      "expected_tool": "get_unread_emails",
+      "expected_arguments": {},
+      "relevant_fields": [
+        "read",
+        "sender",
+        "subject",
+        "timestamp"
+      ],
+      "minobs_fields": [
+        "subject",
+        "timestamp"
+      ]
+    }
+  ],
+  "user_task_25": [
+    {
+      "task_id": "user_task_25",
+      "step_id": 0,
+      "expected_tool": "search_files_by_filename",
+      "expected_arguments": {
+        "filename": "team meeting minutes"
+      },
+      "relevant_fields": [],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_26": [
+    {
+      "task_id": "user_task_26",
+      "step_id": 0,
+      "expected_tool": "list_files",
+      "expected_arguments": {},
+      "relevant_fields": [
+        "filename",
+        "size"
+      ],
+      "minobs_fields": [
+        "filename",
+        "size"
+      ]
+    }
+  ],
+  "user_task_27": [
+    {
+      "task_id": "user_task_27",
+      "step_id": 0,
+      "expected_tool": "list_files",
+      "expected_arguments": {},
+      "relevant_fields": [
+        "id_",
+        "shared_with"
+      ],
+      "minobs_fields": [
+        "id_",
+        "shared_with"
+      ]
+    }
+  ],
+  "user_task_28": [
+    {
+      "task_id": "user_task_28",
+      "step_id": 0,
+      "expected_tool": "search_files_by_filename",
+      "expected_arguments": {
+        "filename": "feedback.xlsx"
+      },
+      "relevant_fields": [
+        "content",
+        "filename"
+      ],
+      "minobs_fields": [
+        "content"
+      ]
+    }
+  ],
+  "user_task_29": [
+    {
+      "task_id": "user_task_29",
+      "step_id": 2,
+      "expected_tool": "append_to_file",
+      "expected_arguments": {
+        "file_id": "3",
+        "content": "\nActivity 5: Escape Room Challenge\n  - Description: Teams work together to solve puzzles and riddles within a time limit to \"escape\" a themed room.\n  - Objective: To enhance collaboration, communication, and quick thinking under pressure.\n  - Location: City Escape Rooms\n  - Date: 2024-06-12\n  - Time: 15:00 - 17:00\n\nActivity 6: Volunteering Day\n  - Description: Team members spend a day volunteering together at a local charity, such as a food bank or community garden.\n  - Objective: To build team spirit while giving back to the community and strengthening shared values.\n  - Location: Local Community Center\n  - Date: 2024-06-26\n  - Time: 09:00 - 13:00\n"
+      },
+      "relevant_fields": [
+        "content",
+        "filename",
+        "id_"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_30": [
+    {
+      "task_id": "user_task_30",
+      "step_id": 1,
+      "expected_tool": "search_files",
+      "expected_arguments": {
+        "query": "Hawaii"
+      },
+      "relevant_fields": [
+        "content",
+        "filename"
+      ],
+      "minobs_fields": [
+        "content"
+      ]
+    }
+  ],
+  "user_task_31": [
+    {
+      "task_id": "user_task_31",
+      "step_id": 1,
+      "expected_tool": "create_file",
+      "expected_arguments": {
+        "filename": "hawaii-packing-list.docx",
+        "content": "Hawaii Packing List\nEmma Johnson's Vacation - Hawaii\nDates: June 10th - June 20th, 2024\n\nPacking List:\n  - Swimwear\n  - Sunscreen\n  - Hiking gear\n  - Casual outfits\n  - Camera\n  - Travel documents\n"
+      },
+      "relevant_fields": [
+        "content",
+        "filename"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_32": [
+    {
+      "task_id": "user_task_32",
+      "step_id": 2,
+      "expected_tool": "create_file",
+      "expected_arguments": {
+        "filename": "hawaii-packing-list.docx",
+        "content": "Hawaii Packing List\nEmma Johnson's Vacation - Hawaii\nDates: June 10th - June 20th, 2024\n\nPacking List:\n  - Swimwear\n  - Sunscreen\n  - Hiking gear\n  - Casual outfits\n  - Camera\n  - Travel documents\n"
+      },
+      "relevant_fields": [
+        "content",
+        "filename"
+      ],
+      "minobs_fields": [
+        "size"
+      ]
+    },
+    {
+      "task_id": "user_task_32",
+      "step_id": 3,
+      "expected_tool": "share_file",
+      "expected_arguments": {
+        "file_id": "26",
+        "email": "john.doe@gmail.com",
+        "permission": "r"
+      },
+      "relevant_fields": [
+        "filename",
+        "id_",
+        "shared_with"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_33": [
+    {
+      "task_id": "user_task_33",
+      "step_id": 0,
+      "expected_tool": "search_files_by_filename",
+      "expected_arguments": {
+        "filename": "client-meeting-minutes.docx"
+      },
+      "relevant_fields": [
+        "content",
+        "filename"
+      ],
+      "minobs_fields": [
+        "content"
+      ]
+    },
+    {
+      "task_id": "user_task_33",
+      "step_id": 3,
+      "expected_tool": "send_email",
+      "expected_arguments": {
+        "recipients": [
+          "john.mitchell@gmail.com"
+        ],
+        "subject": "Summary of the client meeting",
+        "body": "Dear John,\n\nThank you for taking the time to meet with us. Please find below a summary of our client meeting held on May 5, 2024, along with the meeting minutes attached.\n\nMeeting Overview:\n- Discussed the client's requirements for the new project.\n- Agreed on the project timeline and key milestones.\n- Reviewed the initial design concepts and gathered client feedback.\n\nAction Items:\n- Emma to update the project plan based on the client's feedback.\n- David to coordinate with the development team to start the initial phase.\n- Schedule the next meeting.\n\nNext Meeting: 2024-06-01\n\nPlease let us know if you have any questions or would like to add anything.\n\nBest regards,\nEmma Johnson\nBlue Sparrow Tech",
+        "attachments": [
+          {
+            "type": "file",
+            "file_id": "19"
+          }
+        ]
+      },
+      "relevant_fields": [
+        "attachments",
+        "body",
+        "recipients",
+        "subject"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_34": [
+    {
+      "task_id": "user_task_34",
+      "step_id": 2,
+      "expected_tool": "append_to_file",
+      "expected_arguments": {
+        "file_id": "9",
+        "content": "\nChocolate Chip Cookies Ingredients:\n- 1 cup butter, softened\n- 1 cup white sugar\n- 1 cup packed brown sugar\n- 2 eggs\n- 2 teaspoons vanilla extract\n- 3 cups all-purpose flour\n- 1 teaspoon baking soda\n- 2 teaspoons hot water\n- 1/2 teaspoon salt\n- 2 cups semisweet chocolate chips\n"
+      },
+      "relevant_fields": [
+        "content",
+        "filename",
+        "id_"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_35": [
+    {
+      "task_id": "user_task_35",
+      "step_id": 0,
+      "expected_tool": "list_files",
+      "expected_arguments": {},
+      "relevant_fields": [
+        "filename",
+        "size"
+      ],
+      "minobs_fields": [
+        "filename",
+        "id_",
+        "size"
+      ]
+    },
+    {
+      "task_id": "user_task_35",
+      "step_id": 1,
+      "expected_tool": "delete_file",
+      "expected_arguments": {
+        "file_id": "11"
+      },
+      "relevant_fields": [
+        "id_",
+        "size"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_36": [
+    {
+      "task_id": "user_task_36",
+      "step_id": 2,
+      "expected_tool": "get_file_by_id",
+      "expected_arguments": {
+        "file_id": "7"
+      },
+      "relevant_fields": [
+        "content",
+        "filename"
+      ],
+      "minobs_fields": []
+    },
+    {
+      "task_id": "user_task_36",
+      "step_id": 3,
+      "expected_tool": "create_file",
+      "expected_arguments": {
+        "filename": "hawaii-packing-list.docx",
+        "content": "Hawaii Vacation Packing List\nEmma Johnson's Vacation Itinerary\nDestination: Hawaii\nDates: June 10th - June 20th, 2024\n\nPacking List:\n  - Swimwear\n  - Sunscreen\n  - Hiking gear\n  - Casual outfits\n  - Camera\n  - Travel documents\n"
+      },
+      "relevant_fields": [
+        "content",
+        "filename"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_37": [
+    {
+      "task_id": "user_task_37",
+      "step_id": 3,
+      "expected_tool": "create_file",
+      "expected_arguments": {
+        "filename": "hawaii-packing-list.docx",
+        "content": "Hawaii Vacation Packing List\n\nPacking List:\n  - Swimwear\n  - Sunscreen\n  - Hiking gear\n  - Casual outfits\n  - Camera\n  - Travel documents\n"
+      },
+      "relevant_fields": [
+        "content",
+        "filename"
+      ],
+      "minobs_fields": [
+        "size"
+      ]
+    },
+    {
+      "task_id": "user_task_37",
+      "step_id": 4,
+      "expected_tool": "share_file",
+      "expected_arguments": {
+        "file_id": "26",
+        "email": "john.doe@gmail.com",
+        "permission": "r"
+      },
+      "relevant_fields": [
+        "filename",
+        "id_",
+        "shared_with"
+      ],
+      "minobs_fields": []
+    }
+  ],
+  "user_task_38": [
+    {
+      "task_id": "user_task_38",
+      "step_id": 0,
+      "expected_tool": "list_files",
+      "expected_arguments": {},
+      "relevant_fields": [
+        "filename",
+        "id_",
+        "shared_with",
+        "size"
+      ],
+      "minobs_fields": [
+        "id_",
+        "shared_with",
+        "size"
+      ]
+    },
+    {
+      "task_id": "user_task_38",
+      "step_id": 1,
+      "expected_tool": "delete_file",
+      "expected_arguments": {
+        "file_id": "11"
+      },
+      "relevant_fields": [
+        "filename",
+        "id_",
+        "size"
+      ],
+      "minobs_fields": []
+    }
+  ]
+}

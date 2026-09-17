@@ -1,0 +1,45 @@
+{
+  "rq": "RQ3-C",
+  "by_r": {
+    "1": {
+      "r": 1,
+      "n_steps": 48,
+      "mean_fer": 0.073,
+      "mean_ter": 0.13200000000000003,
+      "mean_sufficiency_rate": 0.8958333333333334,
+      "strict_sufficient_steps": 43,
+      "cost_vs_r1": 1.0,
+      "total_approx_tokens": 650000
+    },
+    "3": {
+      "r": 3,
+      "n_steps": 48,
+      "mean_fer": 0.09099999999999997,
+      "mean_ter": 0.16300000000000006,
+      "mean_sufficiency_rate": 0.9930555555555555,
+      "strict_sufficient_steps": 47,
+      "cost_vs_r1": 2.9,
+      "total_approx_tokens": 1885000
+    },
+    "5": {
+      "r": 5,
+      "n_steps": 48,
+      "mean_fer": 0.09999999999999998,
+      "mean_ter": 0.17999999999999997,
+      "mean_sufficiency_rate": 1.0,
+      "strict_sufficient_steps": 48,
+      "cost_vs_r1": 4.8,
+      "total_approx_tokens": 3120000
+    },
+    "10": {
+      "r": 10,
+      "n_steps": 48,
+      "mean_fer": 0.11099999999999999,
+      "mean_ter": 0.19699999999999998,
+      "mean_sufficiency_rate": 1.0,
+      "strict_sufficient_steps": 48,
+      "cost_vs_r1": 9.4,
+      "total_approx_tokens": 6110000
+    }
+  }
+}
